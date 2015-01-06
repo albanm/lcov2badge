@@ -4,6 +4,9 @@
 
 *A simple tool that produces a badge inspired by shields.io from a lcov.info file*
 
+For example the following badge is self served by this project, not by any service provider. Click it to access a lcov report in HTML.
+
+[![Tests code coverage status](http://albanm.github.io/lcov2badge/coverage/badge.svg)](http://albanm.github.io/lcov2badge/lcov-report/index.html)
 
 ## Install
 
