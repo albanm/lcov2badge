@@ -6,7 +6,7 @@ env:
     secure: "W8qkZYfu+P8LwOi+inYQfJxmASfYOMs5mdLITYeknUEVglj3RZFFgPFTeRjYc1HZWhla4LCdPXZbcEio+eAeZjQWxOS/NBjjYEgCxiMYBwWpUxG6gnYnSJZWSjrMOhHlQQK2q44+ygEyreFlP0t9TJjcpnKOucd1jaNTUg/YYWI="
 
 before_install:
-  - npm install -g bower gulp
+  - npm install -g gulp
   - npm install
 
 script:
