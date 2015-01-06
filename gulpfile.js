@@ -15,7 +15,7 @@ gulp.task('mkdir-build', function(callback){
 });
 
 gulp.task('test-cover', ['mkdir-build'], function(callback) {
-    exec('istanbul cover --dir ./build/coverage _mocha', callback);
+    exec('./node_modules/.bin/istanbul cover --dir ./build/coverage ./node_modules/.bin/_mocha', callback);
 });
 
 gulp.task('cover-badge', ['test-cover'], function(callback) {
