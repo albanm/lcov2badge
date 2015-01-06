@@ -11,8 +11,7 @@ before_install:
 
 script:
   - npm test
-  - gulp jshint
 
 # deploy build directory to gh-pages branch
-after_success:
+after_script:
   - gulp deploy-build
