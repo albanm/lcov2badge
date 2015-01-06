@@ -31,11 +31,11 @@ gulp.task('git-config', function(callback){
 
 gulp.task('deploy-build', ['cover-badge', 'git-config'], function() {
 	var deployOptions = {
-		cacheDir: './build/repos/mocha-reporter-badge'
+		cacheDir: './build/repos/lcov2badge'
 	};
 	if (process.env.githubToken) {
 		console.log('"githubToken" environment variable found, use it to authenticate to github');
-		deployOptions.remoteUrl = 'https://' + process.env.githubToken + '@github.com/albanm/mocha-reporter-badge';
+		deployOptions.remoteUrl = 'https://' + process.env.githubToken + '@github.com/albanm/lcov2badge';
 	}
 	return gulp.src('./build/**/*')
 		.pipe(deploy(deployOptions));
