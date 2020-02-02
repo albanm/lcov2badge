@@ -36,8 +36,8 @@ exports.badge = function(options, callback) {
 	options.okColor = options.okColor || 'brightgreen';
 	options.warnColor = options.warnColor || 'orange';
 	options.koColor = options.koColor || 'red';
-	options.warnThreshold = 80;
-	options.koThreshold = 60;
+	options.warnThreshold = options.warnThreshold || 80;
+	options.koThreshold = options.koThreshold || 60;
 	options.subject = options.subject || 'coverage';
 
 	exports.linesRatio(options.filePath, function(err, ratio	){
