@@ -1,6 +1,6 @@
 {
   "name": "lcov2badge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create a SVG badge inspired by shields.io from a coverage report in lcov format",
   "main": "index.js",
   "scripts": {
